@@ -2,14 +2,16 @@
 <head>
   <meta charset="utf-8">
   <title>Cryptography tool</title>
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <style>
     html, body {
       background: #FAFAFA;
       color: #616161;
       font-family: sans-serif;
     }
-    
+
     button {
       height: 36px;
       padding: 0 16px;
@@ -22,9 +24,16 @@
 </head>
 <body>
   <h1>Cryptography School Project</h1>
-  
+
   <p>Welcome, please click the button below to view access the tool.</p>
-  
-  <button>Go to Home</button>
+
+  <button class="mdc-button foo-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Button</span>
+  </button>
+
+  <script>
+  mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+  </script>
 </body>
 </html>
