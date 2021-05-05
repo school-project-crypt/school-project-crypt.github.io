@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+button {font-weight: 500 !important;}
+
 .mdc-card {
   height: 350px;
   width: 350px;
