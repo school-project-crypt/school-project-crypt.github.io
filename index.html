@@ -7,7 +7,6 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
     <link href="styles\main.css" rel="stylesheet">
-    <script href="scripts\components.js"></script>
 </head>
 
 <body>
@@ -18,8 +17,7 @@
                 <span class="mdc-top-app-bar__title">Encrypter tool</span>
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">home</button>
             </section>
         </div>
     </header>
@@ -45,27 +43,13 @@
 <strong><label>String after Decryption:</label></strong>
 <span id="demo3"></span>
 
+    <div class="jumbotron">
+
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
-    </script>
-
-    <script>
-    // INIT
-var myEmail   = "alsmith@cpisecurity.com";
-var secretKey = "1234567890";
-
-
-// PROCESS
-var encrypted = CryptoJS.AES.encrypt(myEmail, secretKey);
-var decrypted = CryptoJS.AES.decrypt(encrypted, secretKey);
-document.getElementById("demo0").innerHTML = myEmail;
-document.getElementById("demo1").innerHTML = encrypted;
-document.getElementById("demo2").innerHTML = decrypted;
-document.getElementById("demo3").innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
-
-    </script>
+    <script href="scripts\main.js"></script>
 </body>
 
 </html>
