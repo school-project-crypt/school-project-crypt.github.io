@@ -1,10 +1,9 @@
-var App = (function() {
+/*var App = (function() {
   App = function(data) {
       this.name = data.name;
   };
 
   App.prototype = {
-
       run: function() {
           // INIT
           var myEmail = "alsmith@cpisecurity.com";
@@ -28,4 +27,5 @@ var app = new App({
   name: "Encryptor Tool",
 });
 
-app.run();
+app.run();*/
+

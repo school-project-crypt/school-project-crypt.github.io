@@ -11,13 +11,67 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-button {font-weight: 500 !important;}
-
-.mdc-card {
-  height: 350px;
-  width: 350px;
+#app {
+  padding: 50px 10vh;
+  word-wrap: break-word;
 }
 
-.mdc-card__media-content {
-  padding: 16px;
+#app #input {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: 1px solid gainsboro;
+  width: 300px;
+  height: 300px;
+
+  transition: all 0.1s;
+
+  resize: none;
+}
+
+#app #input:focus {
+  outline: 2px solid rgba(59, 27, 201, 0.8);
+}
+
+#app #input-key {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: 1px solid gainsboro;
+
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+  width: 300px;
+}
+
+#app #input-key:focus {
+  outline: 2px solid rgba(59, 27, 201, 0.8);
+}
+
+#app button {
+  background-color: rgb(81, 58, 184);
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: .5px;
+
+  border: none;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+
+  cursor: pointer;
+
+  margin-right: 15px;
+}
+
+#app button:hover {
+  background-color: rgb(53, 31, 150);
+}
+
+#app #result {
+  margin-top: 20px;
 }
