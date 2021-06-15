@@ -12,7 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #app {
-  padding: 50px 10vh;
+  padding: 5vh 10vw;
+}
+
+#app p {
+  line-height: 24px;
+  color: #616161;
   word-wrap: break-word;
 }
 
@@ -21,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   border: 1px solid gainsboro;
-  width: 300px;
+  width: 90%;
   height: 300px;
 
   transition: all 0.1s;
